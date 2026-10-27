@@ -1,0 +1,23 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+client_secret*.json
+credentials*.json
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+# Unapproved partner materials and raw community data stay outside version control.
+private/
+raw-data/
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.sqlite
+*.db
