@@ -1,37 +1,33 @@
-name: 學生自提題目／Student proposal
-description: 從觀察與證據提出一週內能驗證的小題目。
-title: "[提案] "
+name: Project proposal
+description: Propose a small feature, experiment, use case, or evaluation.
+title: "[Proposal] "
 labels: [proposal]
 body:
   - type: textarea
     id: problem
     attributes:
-      label: 我觀察到什麼問題？要幫助誰？
-    validations:
-      required: true
-  - type: textarea
-    id: evidence
-    attributes:
-      label: 有哪些依據？哪些仍是推測？
-      description: 提供可分享的來源、匿名摘要或可重現紀錄。
+      label: Problem, user, and evidence
+      description: What have you observed? Separate evidence from assumptions.
     validations:
       required: true
   - type: textarea
     id: outcome
     attributes:
-      label: 一週內能交出什麼？
+      label: Smallest useful outcome
+      description: What can be reviewed within one week?
     validations:
       required: true
   - type: textarea
     id: validation
     attributes:
-      label: 怎樣判斷有幫助？
-      description: 說明檢查方式、可觀察結果與限制。
+      label: Validation and limitations
+      description: How will we know whether it helped, and what will it not prove?
     validations:
       required: true
   - type: textarea
-    id: support
+    id: safety
     attributes:
-      label: 預計日期、需要的資料與協助
+      label: Data, safety, cost, and dependencies
+      description: Explain allowed inputs, human review, model/Token assumptions, and anything blocked.
     validations:
       required: true

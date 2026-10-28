@@ -1,17 +1,14 @@
-# 成果審閱標準
+# Review criteria
 
-| 檢查面向 | 審閱時要看什麼 |
+| Area | Reviewer checks |
 | --- | --- |
-| 範圍 | 回應原 Issue 的目標與交付項目；未完成部分有說明 |
-| 可追溯性 | 觀察、案例與重要結論有來源／版本／日期；需要權限時已標示 |
-| 事實與推測 | 原文明確需求、研究推測及 AI 草稿分開標記 |
-| 可驗證性 | 研究有分類方法與反例；程式有操作步驟及預期／實際結果 |
-| 隱私與用途 | 無個資、秘密或未核准的合作素材；引用符合來源規則 |
-| 限制 | 樣本、偏差、模型不確定性、失敗案例及尚未驗證處寫清楚 |
-| 下一步 | 建議可在一週內完成，說明幫助誰、交出什麼、如何判斷有用 |
+| Scope | The PR answers the linked Issue and identifies unfinished work |
+| Traceability | Important observations and claims have sources, versions, or reproducible evidence |
+| Data | Inputs are synthetic, public, or explicitly approved and contain no personal data |
+| Safety | Human review remains in place; no impersonation, manipulation, scraping, or unapproved outreach is enabled |
+| Validation | Research explains method and counterexamples; code includes steps, fixtures, and expected/actual results |
+| Portability | Paid providers are optional at the core; provider/model and Token assumptions are documented |
+| Limitations | Sample size, uncertainty, failures, bias, and untested claims are explicit |
+| Documentation | A newcomer can find and understand the outcome |
 
-審閱者在 PR 留下「可合併」或具體修改要求。學生修正後再次核對，通過才合併。若尚未取得寫入權限或無法操作 PR，先讓 Pecu 協助，不另開公開庫搬運私有素材。
-
-預設審閱者為 Pecu／指定同學，待實際參與帳號確認後再設定 CODEOWNERS 或要求審閱者，不臆測 Benjamin 的 GitHub 帳號。
-
-目前以協作約定要求先審閱再合併；尚未設定分支保護、自動要求核准或 CI 品質門檻。不要將文件規範誤認為 GitHub 已強制執行。
+Approval means the contribution meets the repository's current scope; it is not a guarantee of production fitness, business results, employment, or commercial adoption.

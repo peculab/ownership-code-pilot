@@ -1,21 +1,28 @@
-## 對應任務
-Closes #<!-- 換成實際 Issue 編號；未完成的階段性 PR 請改用 Refs # -->
+## Related Issue
 
-## 完成了什麼
-<!-- 成果位置、目標對象與本次範圍 -->
+Closes #
 
-## 如何驗證
-<!-- 研究：來源核對、分類方法、反例。程式：操作步驟、測試輸入與預期／實際結果。 -->
+## Outcome
 
-## 證據與來源
-<!-- 只附可分享的連結與匿名摘要，不貼未授權原文或個資。 -->
+What reviewable result does this PR add, and who is it for?
 
-## 限制與需要審閱的問題
+## Validation
 
-## 提交前檢查
-- [ ] 對照原 Issue 的完成標準
-- [ ] 已區分原文事實、個人推測與 AI 產出
-- [ ] 來源、操作或測試方式可追溯
-- [ ] 未包含密碼、金鑰、個資或未核准素材
-- [ ] 已說明 AI 使用方式（若有），並由本人核對
-- [ ] 已指定或在 Issue 約定審閱者
+List commands, fixture inputs, reviewer steps, and expected/actual results. Include failures and limitations.
+
+## Sources and data
+
+Identify provenance and allowed use. Distinguish facts, contributor interpretation, and model-generated output.
+
+## Cost and model details
+
+If AI was used, record provider, model/version, settings, Token/cost estimate, and whether a mock path exists.
+
+## Checklist
+
+- [ ] The PR is focused and follows the linked Issue or explains the change in scope.
+- [ ] No credentials, personal data, private posts, transcripts, or unapproved partner material are included.
+- [ ] No automatic external outreach, impersonation, or restricted-community access was added.
+- [ ] Sources, tests, and limitations are documented.
+- [ ] Documentation and examples are updated where needed.
+- [ ] I have the right to submit this work under Apache License 2.0.

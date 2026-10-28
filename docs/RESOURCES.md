@@ -1,28 +1,16 @@
-# 資源入口與取得狀態
+# Public resource register
 
-只登記來源與可使用範圍，不因為有檔案就假設能分享。以下是待確認清單，沒有已交付或已授權的暗示。
+Register only material that can be referenced safely in this public repository.
 
-| 資源 | 目前狀態 | 需確認的事項 | 對應任務 |
+| Resource | Provenance | Allowed use | Status |
 | --- | --- | --- | --- |
-| 合作會議摘要／逐字稿 | 等待 Pecu 確認可分享版本 | 摘要範圍、敏感內容、是否可提供全體同學 | 案例卡、工程流程 |
-| 經營策略類社團清單 | 等待合作方提供 | 社團連結、規則、可閱讀範圍、引用方式 | 經營需求觀察 |
-| 出售／交易類社團清單 | 等待合作方提供 | 社團連結、規則、可閱讀範圍、引用方式 | 買賣資訊缺口 |
-| Benjamin 的案例／內容素材 | 等待提供及使用範圍確認 | 可使用版本、來源、是否含客戶資訊 | 案例卡、內容企畫 |
-| NOMA 原稿與對應輸入 | 等待提供 | 同一素材的輸入與輸出、可比較版本、評估條件 | AI 草稿比較 |
-| 工程範例文件 | 等待核准或準備合成範例 | 格式、預期輸出、不含個資；合成資料須明確標示 | 文件到草稿流程 |
-| 已完成的內容草稿 | 等待內容任務產出 | 可試讀版本、試讀對象、同意方式 | 內容試讀 |
+| `examples/ownership-code/synthetic-scenarios.json` | Project-authored synthetic fixtures | Public research, implementation, and evaluation | Available |
+| `docs/CHALLENGE.md` | Public project brief derived from the initial scenario | Public scope and design discussion | Available |
+| Public web sources | External | Link and short attributed summary, subject to source terms | Register in the relevant PR |
+| Partner material | Third party | Only after explicit approval for public repository use | Not available by default |
 
-## 新增一筆資源
+## Registering a source
 
-```text
-資源名稱與版本：
-提供者／確認窗口：
-受控來源連結（有權限才可讀取）：
-取得日期：
-允許用途與可接觸成員：
-可否引用／可否保留匿名摘要：
-仍待確認事項：
-對應 Issue：
-```
+Record title/version, provider, URL or controlled location, access date, allowed use, whether quotation or redistribution is permitted, personal-data status, and related Issue.
 
-若來源存於受限雲端資料夾，只保留連結與必要的使用說明。不要擅自擴大分享權限，也不要複製私人群組全文到 GitHub。原始素材尚未到齊時，先在 Issue 約定範圍、方法與表格，不填造假的觀察。
+Meeting transcripts, private community posts, account exports, prospect lists, NOMA output, and partner files are **not public project resources** unless an authorized owner approves a specific de-identified version in writing.

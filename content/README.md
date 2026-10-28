@@ -1,7 +1,5 @@
-# 案例卡與內容設計
+# Content and source cards
 
-案例卡包含：`來源／版本、情境、對象、明確問題、做法、來源支持的結果、尚無證據的推測、可延伸內容、使用限制`。來源沒有結果時，寫「未提供」，不要補造數據。
+This directory may contain public, traceable source cards and reviewed example drafts. Every card must record provenance, allowed use, and limitations. Drafts are model or contributor output, not verified customer outcomes.
 
-內容企畫包含：`目標讀者、對應痛點、三篇順序與理由、每篇草稿、要建立的理解／信任、來源、待查證內容、後續試讀方式`。
-
-預定交付：`案例卡.md`、`三篇內容企畫.md`。稿件不會自動發布到任何社群。
+Do not add private posts, messages, transcripts, contact details, or content intended for automatic external sending.

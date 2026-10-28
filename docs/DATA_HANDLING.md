@@ -1,12 +1,40 @@
-# 資料、引用與 AI 使用原則
+# Data handling
 
-- 尊重來源社團規則與可閱讀範圍。Private Repository 仍會讓受邀成員讀到內容，不能代替原作者或合作方的分享許可。
-- 不提交姓名、電話、信箱、客戶名單、帳號密碼、API 金鑰或未核准的私人貼文與會議全文。
-- 優先保留來源連結、存取日期、匿名摘要與使用範圍。必要截圖先去識別並確認可分享；不大量複製貼文。
-- 來源無法提供給所有成員時，標明存取限制，由具權限的審閱者核對。不編造可公開的來源連結。
-- 觀察表要分開寫「來源明確表達」「研究者推測」「AI 建議」，不要用 AI 補出不存在的社群需求。
-- 使用 AI 時記錄工具／模型（知道時）、日期、輸入摘要、提示詞、輸出版本及人工修改。素材未核准前，不上傳第三方 AI 服務。
-- 研究任務不包含自動加入社團、爬取私人內容、私訊成員或發布貼文。試讀對象與對外聯絡由主辦者另行安排。
-- 發現敏感資料誤入 Git 時，先停止繼續分享並通知 Pecu；僅刪除最新檔案不能清除歷史，洩漏金鑰還需要撤銷或更換。
+This is a public repository. Assume every commit, deleted file, Issue, log, and Pull Request can remain publicly recoverable.
 
-不知道能否使用時，在原任務 Issue 記錄限制與待確認事項，不先假設已取得許可。
+## Allowed
+
+- Synthetic fixtures clearly labeled `synthetic`.
+- Public sources with URL, access date, short attributed summary, and applicable license or terms.
+- Partner material explicitly approved for public repository use.
+- De-identified examples that cannot reasonably be linked back to a person.
+
+## Not allowed
+
+- Names, emails, phone numbers, addresses, account IDs, or customer/prospect lists.
+- Private Facebook-group posts, direct messages, meeting transcripts, or screenshots without explicit publication permission.
+- API keys, access tokens, cookies, credentials, private endpoints, or account exports.
+- Sensitive traits, inferred vulnerabilities, private financial details, or hidden profiling labels.
+- Material copied in excess of its license or platform terms.
+
+## Provenance record
+
+Each fixture or source card should state:
+
+```yaml
+id: stable-non-personal-id
+provenance: synthetic | public | partner-approved
+source_url: null
+accessed_on: YYYY-MM-DD
+allowed_use: evaluation-only | documentation | public-example
+contains_personal_data: false
+notes: why this can be shared
+```
+
+## Before using an AI service
+
+Confirm the material is allowed to leave the local environment, minimize the input, review the provider's retention settings, and record the model/version. If permission is unclear, do not upload it.
+
+## If something sensitive is committed
+
+Stop sharing the link, notify maintainers privately using [SECURITY.md](../SECURITY.md), revoke exposed credentials immediately, and assess history cleanup. Deleting the latest file is not enough to remove it from Git history.

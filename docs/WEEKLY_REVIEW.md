@@ -1,21 +1,14 @@
-# 每週檢視
+# Lightweight project check-in
 
-Pecu／指定審閱者每週與參與者一起看 Issues；Projects 可用後再用看板彙整。
-
-1. 待認領：題目是否仍清楚？素材是否到齊？
-2. 已認領／進行中：每人是否只負責一題？下一個可展示成果是什麼？
-3. `blocked`：缺什麼、誰能協助、何時再確認？
-4. 待審閱：是否有 PR、證據與檢查方式？誰負責審閱？
-5. 已完成：有哪些可以在確認用途後交給 Benjamin 試用？下一題從證據中選，不只增加待辦。
-
-Issue 更新範本：
+Use an Issue comment or discussion update:
 
 ```text
-本週完成（附文件／PR）：
-觀察到的證據：
-仍未驗證的假設：
-目前阻礙與需要協助：
-下次更新／交付日期：
+Completed:
+Evidence or PR:
+Blocked by:
+Decision or review needed:
+Next small outcome:
+Expected next update and time zone:
 ```
 
-尚未約定固定會議時間，請由實際參與者協調，文件不預設任何人的時區或承諾日期。
+Maintainership should focus on reviewing finished small outcomes, resolving named blockers, keeping public/private boundaries clear, and opening the next independent task. Activity volume is less important than reproducible evidence and safe contributions.

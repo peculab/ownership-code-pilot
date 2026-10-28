@@ -1,57 +1,52 @@
-name: 任務／Task
-description: 一張 Issue 對應一項可交付、可驗證的成果。
-title: "[任務] "
+name: Contribution task
+description: Define one small, reviewable, and verifiable project outcome.
+title: "[Task] "
 body:
   - type: textarea
-    id: goal
+    id: problem
     attributes:
-      label: 任務目標
-      description: 要幫助誰？這一週要回答什麼問題？
+      label: Problem and user
+      description: Who benefits, and what question should this task answer?
     validations:
       required: true
   - type: textarea
-    id: materials
+    id: outcome
     attributes:
-      label: 可使用的資料與前置需求
-      description: 列出來源、取得狀態、可使用範圍及依賴的 Issue。缺素材時加 blocked。
+      label: Deliverable
+      description: Name the file, code, design, dataset, or evaluation result reviewers will see.
     validations:
       required: true
   - type: textarea
-    id: steps
+    id: inputs
     attributes:
-      label: 執行步驟
-      value: |
-        - [ ] 留言提出做法，確認範圍與負責人
-        - [ ] 確認資料存取與引用範圍
-        - [ ] 執行研究或實作並保存紀錄
-        - [ ] 驗證成果並說明限制
-        - [ ] 提交 PR，完成審閱修改
-    validations:
-      required: true
-  - type: textarea
-    id: deliverable
-    attributes:
-      label: 交付成果與檔案位置
-      description: 描述看得見的成果，不只寫「研究」或「優化」。
+      label: Allowed inputs and dependencies
+      description: Use synthetic, public, or explicitly approved material. Link blocking Issues.
     validations:
       required: true
   - type: textarea
     id: criteria
     attributes:
-      label: 完成標準
+      label: Completion criteria
       value: |
-        - 每項關鍵觀察有來源或可重現的驗證紀錄
-        - 沒有把推測或 AI 草稿寫成已驗證事實
-        - 成果符合約定範圍，並說明限制
-        - 已提交 PR 且完成指定審閱
+        - [ ] Result is reproducible or traceable
+        - [ ] Evidence and interpretation are distinguishable
+        - [ ] Safety, privacy, and data rules are satisfied
+        - [ ] Limitations are documented
+        - [ ] Pull Request links this Issue
+    validations:
+      required: true
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Expected effort
+      options: ["1–2 hours", "2–4 hours", "About one day", "Up to one week", "Needs scoping"]
     validations:
       required: true
   - type: textarea
     id: claim
     attributes:
-      label: 認領方式與審閱者
+      label: How to claim or help
       value: |
-        請留言：認領原因、預計做法、預計交付日期（含時區）、需要的協助。
-        經確認後設定 Assignee；每人同時先認領一題。
-        負責人：認領後指定
-        審閱者：Pecu／指定同學
+        Comment with your proposed approach, deliverable, expected date/time zone, and help needed. Wait for scope confirmation before a large change.
+    validations:
+      required: true

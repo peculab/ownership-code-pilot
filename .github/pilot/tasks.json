@@ -1,296 +1,57 @@
 {
   "labels": [
-    {
-      "name": "type:research",
-      "color": "1D76DB",
-      "description": "社群觀察與需求分析"
-    },
-    {
-      "name": "type:knowledge",
-      "color": "5319E7",
-      "description": "可追溯的知識與案例"
-    },
-    {
-      "name": "type:content",
-      "color": "0E8A16",
-      "description": "內容設計與草稿"
-    },
-    {
-      "name": "type:ai",
-      "color": "7057FF",
-      "description": "AI 比較與改善"
-    },
-    {
-      "name": "type:engineering",
-      "color": "0052CC",
-      "description": "程式與可操作流程"
-    },
-    {
-      "name": "type:testing",
-      "color": "D93F0B",
-      "description": "比較與試讀驗證"
-    },
-    {
-      "name": "proposal",
-      "color": "A2EEEF",
-      "description": "學生提出的新題目，範圍待審閱"
-    },
-    {
-      "name": "claimable",
-      "color": "BFDADC",
-      "description": "可先提出認領；執行仍須滿足 Issue 前置條件"
-    },
-    {
-      "name": "blocked",
-      "color": "B60205",
-      "description": "有明確阻礙；請在 Issue 說明缺什麼、需要誰協助"
-    },
-    {
-      "name": "waiting-materials",
-      "color": "FBCA04",
-      "description": "等待核准的素材、來源或使用範圍"
-    },
-    {
-      "name": "waiting-dependency",
-      "color": "FEF2C0",
-      "description": "等待其他任務的已審閱成果或試讀安排"
-    }
+    {"name":"good first issue","color":"7057ff","description":"Small, documented starter task using public or synthetic inputs"},
+    {"name":"help wanted","color":"008672","description":"Maintainers welcome community contributions"},
+    {"name":"type:research","color":"1d76db","description":"Research, taxonomy, or evidence work"},
+    {"name":"type:design","color":"d876e3","description":"UX, interaction, or interface design"},
+    {"name":"type:engineering","color":"0052cc","description":"Implementation or developer tooling"},
+    {"name":"type:evaluation","color":"fbca04","description":"Fixtures, rubrics, tests, or measurements"},
+    {"name":"type:documentation","color":"0075ca","description":"Documentation and onboarding"},
+    {"name":"safety","color":"b60205","description":"Privacy, consent, security, or responsible-use work"},
+    {"name":"effort:1-2h","color":"c5def5","description":"Estimated focused effort: 1–2 hours"},
+    {"name":"effort:2-4h","color":"bfdadc","description":"Estimated focused effort: 2–4 hours"},
+    {"name":"effort:1day","color":"d4c5f9","description":"Estimated focused effort: about one day"}
   ],
   "tasks": [
     {
-      "key": "research-owner",
-      "type": "研究",
-      "label": "type:research",
-      "title": "[研究] 觀察經營策略社團，整理 10 則問題",
-      "outcome": "10 則問題紀錄、3 類痛點與一週提案",
-      "prerequisite": "社團清單、規則與可引用範圍",
-      "claimNote": "可先留言認領與提出方法；觀察待資料確認",
-      "claimable": true,
-      "materials": true,
-      "goal": "了解洗衣店經營者在社群中反覆提出的問題，找出一個值得進一步解決的需求。",
-      "data": "從合作方提供並確認可使用的社團清單中，選擇 1～2 個經營類社團。清單與閱讀／引用範圍目前尚待確認，參見 docs/RESOURCES.md。",
-      "steps": [
-        "留言說明想觀察的社團與原因",
-        "記錄社團規則與可閱讀範圍",
-        "整理觀察當日起回溯 30 天內的 10 則相關問題",
-        "將問題分成 3 類，說明分類理由與邊界",
-        "區分原文明確需求與自己的推測",
-        "提出一個下一階段想做、能在一週內驗證的題目"
-      ],
-      "delivery": "一份 Markdown：觀察範圍、10 則匿名問題紀錄與來源連結、三類痛點、樣本限制，以及一個說明「幫助誰、交出什麼、如何驗證」的小提案。\n\n存放位置：`research/經營需求觀察.md`。",
-      "criteria": [
-        "每項觀察有來源、觀察日期與存取限制說明",
-        "分類能對應到原始紀錄，沒有把推測寫成事實",
-        "提案有目標對象、可交付成果與驗證方式",
-        "已提交 PR，連回本 Issue 並完成審閱修改"
-      ],
-      "labels": [
-        "type:research",
-        "blocked",
-        "waiting-materials",
-        "claimable"
-      ],
-      "body": "## 任務目標\n了解洗衣店經營者在社群中反覆提出的問題，找出一個值得進一步解決的需求。\n\n## 可使用的資料與前置需求\n從合作方提供並確認可使用的社團清單中，選擇 1～2 個經營類社團。清單與閱讀／引用範圍目前尚待確認，參見 docs/RESOURCES.md。\n\n**目前狀態：可先留言認領與提出方法；觀察待資料確認。**\n\n## 執行步驟\n- [ ] 留言說明想觀察的社團與原因\n- [ ] 記錄社團規則與可閱讀範圍\n- [ ] 整理觀察當日起回溯 30 天內的 10 則相關問題\n- [ ] 將問題分成 3 類，說明分類理由與邊界\n- [ ] 區分原文明確需求與自己的推測\n- [ ] 提出一個下一階段想做、能在一週內驗證的題目\n\n## 交付成果\n一份 Markdown：觀察範圍、10 則匿名問題紀錄與來源連結、三類痛點、樣本限制，以及一個說明「幫助誰、交出什麼、如何驗證」的小提案。\n\n存放位置：`research/經營需求觀察.md`。\n\n## 完成標準\n- 每項觀察有來源、觀察日期與存取限制說明\n- 分類能對應到原始紀錄，沒有把推測寫成事實\n- 提案有目標對象、可交付成果與驗證方式\n- 已提交 PR，連回本 Issue 並完成審閱修改\n\n## 認領方式\n請留言：\n- 我想認領的原因：\n- 我預計採取的做法：\n- 我預計交付的日期（含時區）：\n- 我需要的協助：\n\n經 Pecu／指定審閱者確認範圍後設定 Assignee。一位主要負責人，每人同時先認領一題。\n\n## 負責人與審閱者\n負責人：認領後指定\n審閱者：Pecu／指定同學\n\n## 遇到阻礙\n保留 `blocked`，說明缺什麼、需要誰協助及下次更新時間。取得資料並確認使用範圍後，才移除相應阻礙標籤。不要把推測、合成資料或 AI 輸出寫成實際觀察。\n"
+      "key":"taxonomy-v1",
+      "title":"[Research] Propose a pain-point taxonomy for the synthetic scenarios",
+      "type":"research",
+      "labels":["good first issue","help wanted","type:research","effort:2-4h"],
+      "outcome":"A documented v1 taxonomy and labels for 12 synthetic questions",
+      "body":"## Why this matters\nThe workflow needs a small, explainable taxonomy before model classification can be evaluated.\n\n## Allowed inputs\nUse only `examples/ownership-code/synthetic-scenarios.json`, `docs/CHALLENGE.md`, and public sources you cite. Do not add real people, private groups, or prospect data.\n\n## Deliverable\nCreate `research/pain-point-taxonomy-v1.md` with: category names and definitions; inclusion/exclusion rules; one label for each scenario; ambiguous cases; and limitations.\n\n## Completion criteria\n- [ ] Every scenario has a proposed label and short rationale\n- [ ] Categories are distinguishable and do not claim sensitive traits\n- [ ] Ambiguity and reviewer disagreement are documented\n- [ ] PR links this Issue and passes the data/safety checklist\n\n## Claim this task\nComment with your proposed categories or method, expected date/time zone, and help needed."
     },
     {
-      "key": "research-sale",
-      "type": "研究",
-      "label": "type:research",
-      "title": "[研究] 觀察出售社團，整理買賣雙方資訊缺口",
-      "outcome": "10 則交易需求紀錄與資訊缺漏分類",
-      "prerequisite": "社團清單、規則與可引用範圍",
-      "claimNote": "可先留言認領與提出方法；觀察待資料確認",
-      "claimable": true,
-      "materials": true,
-      "goal": "了解洗衣店買方與賣方在評估交易時缺少哪些資訊，以及這些缺口可能造成什麼判斷困難。",
-      "data": "合作方核准的出售／交易類社團清單，目前待提供。只使用規則允許閱讀與引用的內容，不聯絡交易當事人、不收集個人聯絡資料。",
-      "steps": [
-        "留言提出觀察範圍與方法",
-        "確認社團規則與來源使用範圍",
-        "整理最近 30 天的 10 則匿名紀錄",
-        "分開標記買方需求、賣方資訊與缺漏",
-        "建立資訊缺口分類，保留反例與不確定處",
-        "提出一個可在一週內驗證的下一步"
-      ],
-      "delivery": "一份 Markdown：10 則匿名紀錄與來源、買賣雙方資訊對照、缺漏分類、限制與下一階段提案。\n\n存放位置：`research/買賣資訊缺口.md`。",
-      "criteria": [
-        "10 則紀錄均有來源及日期，不含個資",
-        "資訊缺漏由紀錄支持，猜測另列",
-        "沒有把少量觀察寫成整體市場結論",
-        "已提交 PR 並完成審閱修改"
-      ],
-      "labels": [
-        "type:research",
-        "blocked",
-        "waiting-materials",
-        "claimable"
-      ],
-      "body": "## 任務目標\n了解洗衣店買方與賣方在評估交易時缺少哪些資訊，以及這些缺口可能造成什麼判斷困難。\n\n## 可使用的資料與前置需求\n合作方核准的出售／交易類社團清單，目前待提供。只使用規則允許閱讀與引用的內容，不聯絡交易當事人、不收集個人聯絡資料。\n\n**目前狀態：可先留言認領與提出方法；觀察待資料確認。**\n\n## 執行步驟\n- [ ] 留言提出觀察範圍與方法\n- [ ] 確認社團規則與來源使用範圍\n- [ ] 整理最近 30 天的 10 則匿名紀錄\n- [ ] 分開標記買方需求、賣方資訊與缺漏\n- [ ] 建立資訊缺口分類，保留反例與不確定處\n- [ ] 提出一個可在一週內驗證的下一步\n\n## 交付成果\n一份 Markdown：10 則匿名紀錄與來源、買賣雙方資訊對照、缺漏分類、限制與下一階段提案。\n\n存放位置：`research/買賣資訊缺口.md`。\n\n## 完成標準\n- 10 則紀錄均有來源及日期，不含個資\n- 資訊缺漏由紀錄支持，猜測另列\n- 沒有把少量觀察寫成整體市場結論\n- 已提交 PR 並完成審閱修改\n\n## 認領方式\n請留言：\n- 我想認領的原因：\n- 我預計採取的做法：\n- 我預計交付的日期（含時區）：\n- 我需要的協助：\n\n經 Pecu／指定審閱者確認範圍後設定 Assignee。一位主要負責人，每人同時先認領一題。\n\n## 負責人與審閱者\n負責人：認領後指定\n審閱者：Pecu／指定同學\n\n## 遇到阻礙\n保留 `blocked`，說明缺什麼、需要誰協助及下次更新時間。取得資料並確認使用範圍後，才移除相應阻礙標籤。不要把推測、合成資料或 AI 輸出寫成實際觀察。\n"
+      "key":"review-states-wireframe",
+      "title":"[Design] Sketch the human-review and handoff states",
+      "type":"design",
+      "labels":["good first issue","help wanted","type:design","safety","effort:2-4h"],
+      "outcome":"An accessible wireframe for approve, revise, reject, and human takeover",
+      "body":"## Why this matters\nHuman judgment is a required system boundary, not a decorative approval button.\n\n## Deliverable\nAdd `docs/design/review-states.md` with a low-fidelity diagram or HTML mockup showing draft, evidence, uncertainty, approve, revise, reject, ask-for-context, and human-takeover states. Include keyboard and small-screen considerations.\n\n## Constraints\nUse synthetic text only. Do not design automatic sending or make AI look like a specific person.\n\n## Completion criteria\n- [ ] All required states and the next action are visible\n- [ ] Evidence and uncertainty are reviewable before approval\n- [ ] No action sends externally\n- [ ] At least one newcomer can follow the flow from the document\n\n## Claim this task\nComment with your format, expected date/time zone, and help needed."
     },
     {
-      "key": "case-cards",
-      "type": "知識",
-      "label": "type:knowledge",
-      "title": "[知識] 將一份會議素材整理成案例卡",
-      "outcome": "3 張可追溯來源的案例卡",
-      "prerequisite": "Benjamin／Pecu 提供可分享素材",
-      "claimNote": "等待素材，可先提出整理架構",
-      "materials": true,
-      "goal": "將一份核准的會議或合作素材整理成他人能理解、能回溯來源的三張案例卡。",
-      "data": "Benjamin／Pecu 確認可分享的單一素材與版本，目前待提供；不得自行匯入會議逐字稿或推定私人素材已可公開。",
-      "steps": [
-        "確認素材版本、用途與可引用範圍",
-        "列出素材確實支持的三個案例",
-        "整理情境、對象、問題、做法與結果",
-        "為每個關鍵敘述標記來源位置",
-        "將來源沒有提供的結果標為未提供",
-        "檢查三張卡可被獨立閱讀並提出限制"
-      ],
-      "delivery": "三張案例卡，欄位參考 `content/README.md`。\n\n存放位置：`content/案例卡.md`。",
-      "criteria": [
-        "每張卡的關鍵敘述可回溯至核准來源位置",
-        "沒有補造案例、成效、客戶資訊或數據",
-        "清楚標出來源支持內容與延伸推測",
-        "已提交 PR 並完成審閱修改"
-      ],
-      "labels": [
-        "type:knowledge",
-        "blocked",
-        "waiting-materials"
-      ],
-      "body": "## 任務目標\n將一份核准的會議或合作素材整理成他人能理解、能回溯來源的三張案例卡。\n\n## 可使用的資料與前置需求\nBenjamin／Pecu 確認可分享的單一素材與版本，目前待提供；不得自行匯入會議逐字稿或推定私人素材已可公開。\n\n**目前狀態：等待素材，可先提出整理架構。**\n\n## 執行步驟\n- [ ] 確認素材版本、用途與可引用範圍\n- [ ] 列出素材確實支持的三個案例\n- [ ] 整理情境、對象、問題、做法與結果\n- [ ] 為每個關鍵敘述標記來源位置\n- [ ] 將來源沒有提供的結果標為未提供\n- [ ] 檢查三張卡可被獨立閱讀並提出限制\n\n## 交付成果\n三張案例卡，欄位參考 `content/README.md`。\n\n存放位置：`content/案例卡.md`。\n\n## 完成標準\n- 每張卡的關鍵敘述可回溯至核准來源位置\n- 沒有補造案例、成效、客戶資訊或數據\n- 清楚標出來源支持內容與延伸推測\n- 已提交 PR 並完成審閱修改\n\n## 認領方式\n請留言：\n- 我想認領的原因：\n- 我預計採取的做法：\n- 我預計交付的日期（含時區）：\n- 我需要的協助：\n\n經 Pecu／指定審閱者確認範圍後設定 Assignee。一位主要負責人，每人同時先認領一題。\n\n## 負責人與審閱者\n負責人：認領後指定\n審閱者：Pecu／指定同學\n\n## 遇到阻礙\n保留 `blocked`，說明缺什麼、需要誰協助及下次更新時間。取得資料並確認使用範圍後，才移除相應阻礙標籤。不要把推測、合成資料或 AI 輸出寫成實際觀察。\n"
+      "key":"evaluation-fixture-schema",
+      "title":"[Evaluation] Define the first fixture and result schema",
+      "type":"evaluation",
+      "labels":["good first issue","help wanted","type:evaluation","effort:2-4h"],
+      "outcome":"JSON Schema or documented schema for safe, reproducible fixtures and results",
+      "body":"## Why this matters\nComparable experiments require versioned inputs, provenance, expected safety flags, model metadata, and reviewer outcomes.\n\n## Deliverable\nPropose schemas under `evaluation/schema/` for an input fixture and evaluation result. Add two valid synthetic examples and document validation.\n\n## Required fields\nOpaque ID, provenance, allowed use, question, source-card IDs, expected risk flags, workflow/model version, reviewer action, rubric scores, Token/cost estimate, and limitations. No personal data.\n\n## Completion criteria\n- [ ] Examples validate using a documented command or manual procedure\n- [ ] Schema supports the rubric in `docs/EVALUATION.md`\n- [ ] Personal contact fields are intentionally absent\n- [ ] Provider-specific metadata is optional and portable\n\n## Claim this task\nComment with JSON Schema or alternative approach, expected date/time zone, and help needed."
     },
     {
-      "key": "content-sequence",
-      "type": "內容",
-      "label": "type:content",
-      "title": "[內容] 為一個痛點設計三篇內容",
-      "outcome": "三篇內容順序、草稿與設計理由",
-      "prerequisite": "經審閱的需求觀察／痛點",
-      "claimNote": "等待研究成果，可先討論內容形式",
-      "materials": false,
-      "goal": "針對一個有來源支持的痛點，設計三篇彼此連貫的內容，說明如何幫助讀者理解問題與建立信任。",
-      "data": "依賴「經營需求觀察」或「買賣資訊缺口」任務的已審閱成果。選定痛點前先在本 Issue 連結實際研究 Issue／PR。",
-      "steps": [
-        "連結支持痛點的研究紀錄",
-        "定義一個目標讀者與要回答的問題",
-        "安排三篇順序並說明理由",
-        "撰寫三篇草稿與來源",
-        "標出需要查證、不能直接發布的敘述",
-        "提出下一階段試讀的問題"
-      ],
-      "delivery": "三篇內容企畫與草稿，包含對象、順序、設計理由、來源、查證項目與試讀方式。\n\n存放位置：`content/三篇內容企畫.md`。",
-      "criteria": [
-        "選題連回實際研究證據，不只靠 AI 產生痛點",
-        "三篇各有功能且順序合理",
-        "沒有未經來源支持的保證或成效宣稱",
-        "已提交 PR 並完成審閱；不自動對外發布"
-      ],
-      "labels": [
-        "type:content",
-        "blocked",
-        "waiting-dependency"
-      ],
-      "body": "## 任務目標\n針對一個有來源支持的痛點，設計三篇彼此連貫的內容，說明如何幫助讀者理解問題與建立信任。\n\n## 可使用的資料與前置需求\n依賴「經營需求觀察」或「買賣資訊缺口」任務的已審閱成果。選定痛點前先在本 Issue 連結實際研究 Issue／PR。\n\n**目前狀態：等待研究成果，可先討論內容形式。**\n\n## 執行步驟\n- [ ] 連結支持痛點的研究紀錄\n- [ ] 定義一個目標讀者與要回答的問題\n- [ ] 安排三篇順序並說明理由\n- [ ] 撰寫三篇草稿與來源\n- [ ] 標出需要查證、不能直接發布的敘述\n- [ ] 提出下一階段試讀的問題\n\n## 交付成果\n三篇內容企畫與草稿，包含對象、順序、設計理由、來源、查證項目與試讀方式。\n\n存放位置：`content/三篇內容企畫.md`。\n\n## 完成標準\n- 選題連回實際研究證據，不只靠 AI 產生痛點\n- 三篇各有功能且順序合理\n- 沒有未經來源支持的保證或成效宣稱\n- 已提交 PR 並完成審閱；不自動對外發布\n\n## 認領方式\n請留言：\n- 我想認領的原因：\n- 我預計採取的做法：\n- 我預計交付的日期（含時區）：\n- 我需要的協助：\n\n經 Pecu／指定審閱者確認範圍後設定 Assignee。一位主要負責人，每人同時先認領一題。\n\n## 負責人與審閱者\n負責人：認領後指定\n審閱者：Pecu／指定同學\n\n## 遇到阻礙\n保留 `blocked`，說明缺什麼、需要誰協助及下次更新時間。取得資料並確認使用範圍後，才移除相應阻礙標籤。不要把推測、合成資料或 AI 輸出寫成實際觀察。\n"
+      "key":"mock-workflow-contract",
+      "title":"[Engineering] Implement a provider-neutral mock workflow contract",
+      "type":"engineering",
+      "labels":["help wanted","type:engineering","type:evaluation","effort:1day"],
+      "outcome":"A no-network mock flow from synthetic input to reviewable draft",
+      "body":"## Goal\nImplement the smallest no-network path described in `docs/ARCHITECTURE.md`: validate input, assign a placeholder pain-point label, select fixture sources, produce a draft with uncertainty, and return a human-review action.\n\n## Constraints\nNo paid API, browser automation, external outreach, private data, or production connector. Agree on language/runtime in this Issue before implementation.\n\n## Completion criteria\n- [ ] A documented command runs on at least two synthetic fixtures\n- [ ] Output includes evidence IDs, uncertainty, and review status\n- [ ] Tests cover invalid provenance and missing evidence\n- [ ] README explains how a future provider connector can replace only the model edge\n\n## Claim this task\nPost a short interface proposal before coding so parallel contributors can align."
     },
     {
-      "key": "ai-comparison",
-      "type": "AI",
-      "label": "type:ai",
-      "title": "[AI] 比較 NOMA 與新流程產生的草稿",
-      "outcome": "3 組同素材比較與改善紀錄",
-      "prerequisite": "同一素材、NOMA 原稿與新流程",
-      "claimNote": "等待輸入與原稿，可先設計比較準則",
-      "materials": true,
-      "goal": "在相同素材與清楚的評估條件下，比較 NOMA 原稿及新流程的三組草稿，找出可觀察的改善與限制。",
-      "data": "需取得核准的同一素材、對應 NOMA 原稿及可執行的新流程。沒有 NOMA 原稿時不能用自製稿假冒。使用外部 AI 服務前先確認素材用途。",
-      "steps": [
-        "確認同素材、版本與比較條件",
-        "先定義正確性、完整性、可讀性與信任風險等準則",
-        "保存三組輸入／提示詞／輸出與模型資訊（可取得時）",
-        "逐項比較，記錄支持與不支持改善的證據",
-        "記錄人工修改、失敗案例與資源成本（可量測時）",
-        "提出具體改進與仍未驗證的假設"
-      ],
-      "delivery": "三組比較表、匿名輸入摘要、輸出版本、評估方式及改善／失敗紀錄。\n\n存放位置：`evaluation/AI草稿比較.md`。",
-      "criteria": [
-        "三組使用可追溯的同素材條件",
-        "不把未執行的呼叫寫成已測試",
-        "保留失敗與不利結果，不只挑選好稿",
-        "結論有證據與限制，已提交 PR 並完成審閱"
-      ],
-      "labels": [
-        "type:ai",
-        "blocked",
-        "waiting-materials"
-      ],
-      "body": "## 任務目標\n在相同素材與清楚的評估條件下，比較 NOMA 原稿及新流程的三組草稿，找出可觀察的改善與限制。\n\n## 可使用的資料與前置需求\n需取得核准的同一素材、對應 NOMA 原稿及可執行的新流程。沒有 NOMA 原稿時不能用自製稿假冒。使用外部 AI 服務前先確認素材用途。\n\n**目前狀態：等待輸入與原稿，可先設計比較準則。**\n\n## 執行步驟\n- [ ] 確認同素材、版本與比較條件\n- [ ] 先定義正確性、完整性、可讀性與信任風險等準則\n- [ ] 保存三組輸入／提示詞／輸出與模型資訊（可取得時）\n- [ ] 逐項比較，記錄支持與不支持改善的證據\n- [ ] 記錄人工修改、失敗案例與資源成本（可量測時）\n- [ ] 提出具體改進與仍未驗證的假設\n\n## 交付成果\n三組比較表、匿名輸入摘要、輸出版本、評估方式及改善／失敗紀錄。\n\n存放位置：`evaluation/AI草稿比較.md`。\n\n## 完成標準\n- 三組使用可追溯的同素材條件\n- 不把未執行的呼叫寫成已測試\n- 保留失敗與不利結果，不只挑選好稿\n- 結論有證據與限制，已提交 PR 並完成審閱\n\n## 認領方式\n請留言：\n- 我想認領的原因：\n- 我預計採取的做法：\n- 我預計交付的日期（含時區）：\n- 我需要的協助：\n\n經 Pecu／指定審閱者確認範圍後設定 Assignee。一位主要負責人，每人同時先認領一題。\n\n## 負責人與審閱者\n負責人：認領後指定\n審閱者：Pecu／指定同學\n\n## 遇到阻礙\n保留 `blocked`，說明缺什麼、需要誰協助及下次更新時間。取得資料並確認使用範圍後，才移除相應阻礙標籤。不要把推測、合成資料或 AI 輸出寫成實際觀察。\n"
-    },
-    {
-      "key": "document-pipeline",
-      "type": "工程",
-      "label": "type:engineering",
-      "title": "[工程] 完成文件輸入到草稿輸出的流程",
-      "outcome": "可操作的最小流程與執行說明",
-      "prerequisite": "核准的範例文件與預期輸出",
-      "claimNote": "等待確認輸入；可提議使用明確標示的合成文件",
-      "materials": true,
-      "goal": "完成一個小而可重現的文件輸入到草稿輸出流程，讓他人依說明操作，不預設已存在 NOMA API 或付費模型帳號。",
-      "data": "核准的範例文件與輸出需求，目前待確認；可先提出使用合成範例的方案，須明確標示且由審閱者確認範圍。",
-      "steps": [
-        "確認一種最小輸入格式與預期輸出",
-        "說明實作方式、模型需求與成本（若有）",
-        "完成輸入驗證與草稿產生流程",
-        "處理至少一個失敗／無效輸入情境",
-        "保存實際操作、輸出與測試結果",
-        "撰寫安裝、設定、執行與限制說明"
-      ],
-      "delivery": "`src/` 下的程式與 README，附可分享的範例及 `evaluation/文件流程測試.md`。密鑰只用本機環境設定，不提交。",
-      "criteria": [
-        "他人能依 README 重現成功及失敗情境",
-        "清楚區分實際模型呼叫、規則或模擬輸出",
-        "無秘密、個資與未核准素材",
-        "有實際測試紀錄，已提交 PR 並完成審閱"
-      ],
-      "labels": [
-        "type:engineering",
-        "blocked",
-        "waiting-materials"
-      ],
-      "body": "## 任務目標\n完成一個小而可重現的文件輸入到草稿輸出流程，讓他人依說明操作，不預設已存在 NOMA API 或付費模型帳號。\n\n## 可使用的資料與前置需求\n核准的範例文件與輸出需求，目前待確認；可先提出使用合成範例的方案，須明確標示且由審閱者確認範圍。\n\n**目前狀態：等待確認輸入；可提議使用明確標示的合成文件。**\n\n## 執行步驟\n- [ ] 確認一種最小輸入格式與預期輸出\n- [ ] 說明實作方式、模型需求與成本（若有）\n- [ ] 完成輸入驗證與草稿產生流程\n- [ ] 處理至少一個失敗／無效輸入情境\n- [ ] 保存實際操作、輸出與測試結果\n- [ ] 撰寫安裝、設定、執行與限制說明\n\n## 交付成果\n`src/` 下的程式與 README，附可分享的範例及 `evaluation/文件流程測試.md`。密鑰只用本機環境設定，不提交。\n\n## 完成標準\n- 他人能依 README 重現成功及失敗情境\n- 清楚區分實際模型呼叫、規則或模擬輸出\n- 無秘密、個資與未核准素材\n- 有實際測試紀錄，已提交 PR 並完成審閱\n\n## 認領方式\n請留言：\n- 我想認領的原因：\n- 我預計採取的做法：\n- 我預計交付的日期（含時區）：\n- 我需要的協助：\n\n經 Pecu／指定審閱者確認範圍後設定 Assignee。一位主要負責人，每人同時先認領一題。\n\n## 負責人與審閱者\n負責人：認領後指定\n審閱者：Pecu／指定同學\n\n## 遇到阻礙\n保留 `blocked`，說明缺什麼、需要誰協助及下次更新時間。取得資料並確認使用範圍後，才移除相應阻礙標籤。不要把推測、合成資料或 AI 輸出寫成實際觀察。\n"
-    },
-    {
-      "key": "reader-test",
-      "type": "測試",
-      "label": "type:testing",
-      "title": "[測試] 執行內容試讀並整理回饋",
-      "outcome": "匿名試讀紀錄與修改建議",
-      "prerequisite": "可試讀草稿、主辦者安排的試讀者",
-      "claimNote": "等待內容與試讀安排，可先擬定問題",
-      "materials": false,
-      "goal": "觀察目標讀者是否看懂內容、哪些地方產生疑問，以及哪些修改值得下一輪驗證。",
-      "data": "依賴已審閱的內容草稿／比較成果，以及主辦者安排且同意試讀的對象。不自行私訊社團成員，也不擅自分享合作素材。",
-      "steps": [
-        "連結可試讀版本與相關 Issue／PR",
-        "與審閱者確認試讀問題及對象安排",
-        "記錄試讀範圍、日期與匿名代號",
-        "保存支持與反對原假設的匿名反應",
-        "將回饋對應到具體修改建議",
-        "說明樣本限制與下一次要驗證的問題"
-      ],
-      "delivery": "試讀計畫、實際匿名紀錄、版本對照與修改建議。\n\n存放位置：`evaluation/內容試讀.md`。",
-      "criteria": [
-        "確有試讀紀錄；未執行部分明確標為待測",
-        "不含試讀者個資或未經同意的原話",
-        "修改建議能連回回饋，沒有把少量樣本寫成普遍成效",
-        "已提交 PR 並完成審閱修改"
-      ],
-      "labels": [
-        "type:testing",
-        "blocked",
-        "waiting-dependency"
-      ],
-      "body": "## 任務目標\n觀察目標讀者是否看懂內容、哪些地方產生疑問，以及哪些修改值得下一輪驗證。\n\n## 可使用的資料與前置需求\n依賴已審閱的內容草稿／比較成果，以及主辦者安排且同意試讀的對象。不自行私訊社團成員，也不擅自分享合作素材。\n\n**目前狀態：等待內容與試讀安排，可先擬定問題。**\n\n## 執行步驟\n- [ ] 連結可試讀版本與相關 Issue／PR\n- [ ] 與審閱者確認試讀問題及對象安排\n- [ ] 記錄試讀範圍、日期與匿名代號\n- [ ] 保存支持與反對原假設的匿名反應\n- [ ] 將回饋對應到具體修改建議\n- [ ] 說明樣本限制與下一次要驗證的問題\n\n## 交付成果\n試讀計畫、實際匿名紀錄、版本對照與修改建議。\n\n存放位置：`evaluation/內容試讀.md`。\n\n## 完成標準\n- 確有試讀紀錄；未執行部分明確標為待測\n- 不含試讀者個資或未經同意的原話\n- 修改建議能連回回饋，沒有把少量樣本寫成普遍成效\n- 已提交 PR 並完成審閱修改\n\n## 認領方式\n請留言：\n- 我想認領的原因：\n- 我預計採取的做法：\n- 我預計交付的日期（含時區）：\n- 我需要的協助：\n\n經 Pecu／指定審閱者確認範圍後設定 Assignee。一位主要負責人，每人同時先認領一題。\n\n## 負責人與審閱者\n負責人：認領後指定\n審閱者：Pecu／指定同學\n\n## 遇到阻礙\n保留 `blocked`，說明缺什麼、需要誰協助及下次更新時間。取得資料並確認使用範圍後，才移除相應阻礙標籤。不要把推測、合成資料或 AI 輸出寫成實際觀察。\n"
+      "key":"newcomer-doc-test",
+      "title":"[Docs] Run a newcomer test of the public contribution path",
+      "type":"documentation",
+      "labels":["good first issue","help wanted","type:documentation","effort:1-2h"],
+      "outcome":"A friction log and focused documentation fixes",
+      "body":"## Goal\nPretend you are seeing the project for the first time. Follow README → challenge → safety/data rules → good first issue → PR guidance without using private context.\n\n## Deliverable\nOpen a PR with a short friction log in `docs/onboarding-test.md` and fix the clearest documentation problems you found. Do not invent missing product behavior.\n\n## Completion criteria\n- [ ] Record browser/OS and access date\n- [ ] Identify what was clear, confusing, missing, or contradictory\n- [ ] Verify all public links you touched\n- [ ] Keep fixes focused and accessible to non-experts\n\n## Claim this task\nAnyone may start this task; comment first to avoid duplicate reviews."
     }
   ]
 }

@@ -1,44 +1,40 @@
-# 協作與交付方式
+# Contributing
 
-## 認領
+Thank you for helping build a reusable, safe, human-reviewed AI workflow. Research, design, evaluation, documentation, and code contributions are all welcome.
 
-1. 選一個 Issue，閱讀目標、前置需求、成果位置與完成標準。
-2. 留言：
+## Start here
 
-   ```text
-   我想認領的原因：
-   我預計採取的做法：
-   我預計交付的日期（含時區）：
-   我需要的協助：
-   ```
+1. Read the [challenge](docs/CHALLENGE.md), [safety policy](docs/SAFETY.md), and [data rules](docs/DATA_HANDLING.md).
+2. Choose an open Issue labeled `good first issue` or `help wanted`.
+3. Comment with your intended approach, expected outcome, time zone, and help needed.
+4. Wait for scope confirmation before a large change. Small typo or documentation fixes may go directly to a Pull Request.
+5. Fork the repository or create a branch such as `issue-12-evaluation-fixtures`.
+6. Submit one focused Pull Request and link the Issue with `Closes #12` or `Refs #12`.
 
-3. Pecu／指定審閱者確認後設定 Assignee，將看板移至「已認領」，填入預計交付日。**留言不代表已獲指派。**
-4. 每人同時先負責一題；開始實作時移至「進行中」。協作者與審閱者在 Issue 中列出。
+## Definition of done
 
-## 分支與 PR
+- The promised artifact is easy to find and review.
+- Claims have sources or reproducible test evidence.
+- Facts, contributor interpretation, and model output are distinguishable.
+- Synthetic or approved data is labeled with provenance and allowed use.
+- Tests or review steps are documented, including failures and limitations.
+- No credential, personal data, restricted content, or unapproved outreach is included.
+- Documentation is updated when an interface or workflow changes.
 
-已有此私有庫寫入權限的同學，可直接在庫內建立分支；不要假設私有庫一定允許 Fork。
+## Small-task rule
 
-```powershell
-git clone https://github.com/peculab/ownership-code-pilot.git
-cd ownership-code-pilot
-git switch main
-git pull --ff-only
-git switch -c task-1-owner-research
-# 新增研究文件或程式，檢查差異後，只加入該題相關檔案。
-git add research/經營需求觀察.md
-git commit -m "Document community needs observations"
-git push -u origin task-1-owner-research
-```
+Prefer work that one person can review within a week. Split broad ideas into an Issue for the interface or decision, one for a fixture or baseline, and one for implementation. A design discussion is not a commitment to merge every proposed feature.
 
-在 GitHub 建立 PR，使用範本並寫 `Closes #1`（請換成實際任務編號）。附上可重現的檢查方式，研究任務也要檢查來源、分類與推測標記。已可審閱才移至「待審閱」；未完成可先開 Draft PR，不要當成已交付。
+## Provider neutrality and cost
 
-審閱者依 [審閱標準](docs/REVIEW.md) 回饋。學生在同一分支提交修正，不必重開 PR。審閱通過後才合併並將看板移至「已完成」。看板狀態不會單靠 Git push 自動更新，除非另行設定 GitHub Projects 工作流程。
+Do not make a paid provider necessary for the core test suite. Put provider integrations behind a connector, document model/version and Token or cost assumptions, and include a mock path when practical. Never commit `.env` or real keys.
 
-## 卡住時
+## Rights and credit
 
-在 Issue 說明「目前進度、缺什麼、需要誰協助、下一次更新時間」，加 `blocked` 標籤。不要為了填滿成果而編造觀察、案例、測試或日期。取得素材後先確認能否引用，再移除阻礙。
+By submitting a contribution, you certify that you have the right to provide it and agree that accepted work is licensed under Apache License 2.0. Commit and Pull Request history provides attribution. Do not contribute employer, school, client, or third-party material without permission.
 
-## 不包含在本次設定的事項
+Participation does not create a promise of adoption, payment, internship, employment, equity, or company formation. Any separate commercial relationship needs a written agreement.
 
-目前沒有自動部署、外部寄信、社群貼文發布或正式 NOMA 串接。任何對外發布或聯絡都需由主辦者明確安排。程式與研究都以可審閱的小成果為單位。
+## Conduct and safety
+
+Follow [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Maintainers may close or reject work that enables impersonation, spam, restricted-community scraping, covert manipulation, or unapproved external contact.

@@ -1,0 +1,20 @@
+{
+  "version": "0.1.0",
+  "provenance": "synthetic",
+  "allowed_use": "public-example-and-evaluation",
+  "contains_personal_data": false,
+  "scenarios": [
+    {"id":"syn-001","question":"I may want to retire in a few years, but I do not know what information a potential buyer would need. Where should I begin?"},
+    {"id":"syn-002","question":"My business is profitable, but most daily decisions still depend on me. What should I document before considering a transition?"},
+    {"id":"syn-003","question":"I am interested in buying a small business but have limited capital. What questions should I ask before considering financing options?"},
+    {"id":"syn-004","question":"How can an owner compare a gradual transition with an immediate sale without assuming either is always better?"},
+    {"id":"syn-005","question":"What records help explain whether revenue depends on repeat customers, one large customer, or the current owner?"},
+    {"id":"syn-006","question":"I have not decided whether to sell. What can I improve now that would still help the business if I keep it?"},
+    {"id":"syn-007","question":"How should a buyer distinguish operational problems that can be improved from risks that make a deal unsuitable?"},
+    {"id":"syn-008","question":"What does a respectful first conversation about succession look like when an owner has not asked for an offer?"},
+    {"id":"syn-009","question":"Which parts of a business-transition discussion require a lawyer, accountant, lender, or other licensed professional?"},
+    {"id":"syn-010","question":"How can a team explain financing structures without giving personalized financial or legal advice?"},
+    {"id":"syn-011","question":"What information is still missing when someone says they want to sell quickly but gives no timeline, goals, or financial context?"},
+    {"id":"syn-012","question":"When should an AI-generated draft be rejected and handed to a human rather than revised automatically?"}
+  ]
+}

@@ -1,11 +1,5 @@
-# 比較與測試紀錄
+# Evaluation
 
-## AI 草稿比較
+Evaluation artifacts include versioned synthetic fixtures, schemas, rubrics, runners, and reproducible results. Follow [`docs/EVALUATION.md`](../docs/EVALUATION.md).
 
-使用同一份核准素材，比較 NOMA 原稿與新流程；至少三組。記錄輸入版本、提示詞、工具／模型、輸出、評分準則、事實錯誤、人工修訂及限制。沒有原稿時標示等待，不補寫假比較。
-
-## 內容試讀
-
-先由主辦者安排願意參與的試讀者與可用草稿。記錄匿名受測代號、日期、版本、試讀問題、原始反應的匿名摘要、修改建議及未解問題。保留不支持假設的反饋，不把少量試讀推論成普遍成效。
-
-預定交付：`AI草稿比較.md`、`內容試讀.md`。本庫目前沒有真實試讀資料或已驗證改善數據。
+Report model and workflow versions, sample size, reviewer method, Token or cost estimate, failures, and limitations. Do not translate simulated draft scores into claims about trust, leads, conversion, or revenue.

@@ -1,17 +1,37 @@
-# 第一次參與：先完成這五件事
+# Your first contribution
 
-1. 閱讀 [專案首頁](../README.zh-TW.md) 與 [資料使用原則](DATA_HANDLING.md)。
-2. 看 [任務清單](TASKS.md)，選擇一個你想研究或實作的成果。
-3. 在該 Issue 留言認領，說明原因、做法、日期與需要協助；等範圍確認與 Assignee 指派後再開始。
-4. 從 `main` 建立自己的分支，依資料夾說明保存證據與成果。還不熟 Git 時，可先使用 GitHub 網頁編輯檔案，選擇建立新分支及 PR，**不要直接改 main**。
-5. 用 [PR 範本](../.github/pull_request_template.md) 交付，連回 Issue，處理審閱修改。
+## 1. Understand the boundary
 
-## 我現在能做什麼？
+Read the [challenge](CHALLENGE.md), [safety](SAFETY.md), and [data handling](DATA_HANDLING.md) pages. The project prepares human-reviewed drafts; it does not send outreach or use private community data.
 
-- 研究題：可先認領、提出社團選擇與觀察方法。社團清單／存取範圍未確認前，不開始蒐集。
-- 等待素材的題目：先在 Issue 說明想法與缺少的輸入，不把草稿或假設寫成成果。
-- 有自己的觀察：到 Issues → New issue →「學生自提題目」提出證據與一週內能完成的提案。
+## 2. Choose a small Issue
 
-## 完成一題是什麼意思？
+Start with a `good first issue` that can be completed using synthetic fixtures. Comment:
 
-不是只回報「做完了」。請讓別人能找到實際成果、理解來源與做法、重現檢查，並知道哪些仍有限制。研究筆記和程式都要經 PR 審閱；示意資料及 AI 內容要標示清楚。
+```text
+Why I am interested:
+My proposed approach:
+What I will deliver:
+Expected date and time zone:
+Help or review I need:
+```
+
+## 3. Work in a branch or fork
+
+```bash
+git clone https://github.com/peculab/ownership-code-pilot.git
+cd ownership-code-pilot
+git checkout -b issue-12-short-description
+```
+
+Do not add keys, contact lists, transcripts, or private posts. Use the mock provider or your own local key; real `.env` files are ignored.
+
+## 4. Show how you checked the result
+
+Research contributions need traceable sources and a distinction between evidence and interpretation. Code contributions need reproducible steps, fixture inputs, expected results, and known limitations.
+
+## 5. Open a Pull Request
+
+Link the Issue, describe the change, show validation evidence, and complete the safety/data checklist. A Draft PR is welcome when you want early feedback.
+
+Accepted work is publicly attributed through Git history and released under Apache License 2.0.

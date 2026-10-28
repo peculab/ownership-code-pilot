@@ -1,58 +1,42 @@
 [
   {
-    "key": "research-owner",
-    "number": 1,
-    "url": "https://github.com/peculab/ownership-code-pilot/issues/1",
-    "nodeId": "I_kwDOVYrNvc8AAAABaLve4Q",
-    "title": "[研究] 觀察經營策略社團，整理 10 則問題",
-    "type": "研究"
+    "key": "taxonomy-v1",
+    "number": 8,
+    "url": "https://github.com/peculab/ownership-code-pilot/issues/8",
+    "nodeId": "I_kwDOVYrNvc8AAAABatkA6Q",
+    "title": "[Research] Propose a pain-point taxonomy for the synthetic scenarios",
+    "type": "research"
   },
   {
-    "key": "research-sale",
-    "number": 2,
-    "url": "https://github.com/peculab/ownership-code-pilot/issues/2",
-    "nodeId": "I_kwDOVYrNvc8AAAABaLvfNA",
-    "title": "[研究] 觀察出售社團，整理買賣雙方資訊缺口",
-    "type": "研究"
+    "key": "review-states-wireframe",
+    "number": 9,
+    "url": "https://github.com/peculab/ownership-code-pilot/issues/9",
+    "nodeId": "I_kwDOVYrNvc8AAAABatkBUQ",
+    "title": "[Design] Sketch the human-review and handoff states",
+    "type": "design"
   },
   {
-    "key": "case-cards",
-    "number": 3,
-    "url": "https://github.com/peculab/ownership-code-pilot/issues/3",
-    "nodeId": "I_kwDOVYrNvc8AAAABaLvffg",
-    "title": "[知識] 將一份會議素材整理成案例卡",
-    "type": "知識"
+    "key": "evaluation-fixture-schema",
+    "number": 10,
+    "url": "https://github.com/peculab/ownership-code-pilot/issues/10",
+    "nodeId": "I_kwDOVYrNvc8AAAABatkBvg",
+    "title": "[Evaluation] Define the first fixture and result schema",
+    "type": "evaluation"
   },
   {
-    "key": "content-sequence",
-    "number": 4,
-    "url": "https://github.com/peculab/ownership-code-pilot/issues/4",
-    "nodeId": "I_kwDOVYrNvc8AAAABaLvfzg",
-    "title": "[內容] 為一個痛點設計三篇內容",
-    "type": "內容"
+    "key": "mock-workflow-contract",
+    "number": 11,
+    "url": "https://github.com/peculab/ownership-code-pilot/issues/11",
+    "nodeId": "I_kwDOVYrNvc8AAAABatkCSA",
+    "title": "[Engineering] Implement a provider-neutral mock workflow contract",
+    "type": "engineering"
   },
   {
-    "key": "ai-comparison",
-    "number": 5,
-    "url": "https://github.com/peculab/ownership-code-pilot/issues/5",
-    "nodeId": "I_kwDOVYrNvc8AAAABaLvgFg",
-    "title": "[AI] 比較 NOMA 與新流程產生的草稿",
-    "type": "AI"
-  },
-  {
-    "key": "document-pipeline",
-    "number": 6,
-    "url": "https://github.com/peculab/ownership-code-pilot/issues/6",
-    "nodeId": "I_kwDOVYrNvc8AAAABaLvgWw",
-    "title": "[工程] 完成文件輸入到草稿輸出的流程",
-    "type": "工程"
-  },
-  {
-    "key": "reader-test",
-    "number": 7,
-    "url": "https://github.com/peculab/ownership-code-pilot/issues/7",
-    "nodeId": "I_kwDOVYrNvc8AAAABaLvgpQ",
-    "title": "[測試] 執行內容試讀並整理回饋",
-    "type": "測試"
+    "key": "newcomer-doc-test",
+    "number": 12,
+    "url": "https://github.com/peculab/ownership-code-pilot/issues/12",
+    "nodeId": "I_kwDOVYrNvc8AAAABatkCqg",
+    "title": "[Docs] Run a newcomer test of the public contribution path",
+    "type": "documentation"
   }
 ]

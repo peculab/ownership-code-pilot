@@ -1,7 +1,5 @@
-# 程式與自動化流程
+# Reference implementation
 
-工程任務先交付一個可操作的「文件輸入 → 草稿輸出」最小流程，不預設使用某個框架、付費模型或可用的 NOMA API。
+Code will implement the provider-neutral, human-reviewed flow in [`docs/ARCHITECTURE.md`](../docs/ARCHITECTURE.md).
 
-程式 PR 應附：安裝／執行方式、支援格式與限制、範例輸入輸出、錯誤情境、秘密設定方式、已執行測試與實際結果。使用合成文件時必須標示；沒有真正呼叫模型時，不把輸出宣稱為 AI 呼叫結果。
-
-本階段尚未有可執行程式、API 串接或實作測試結果。
+The first implementation should run with a mock provider and synthetic fixtures. Keep paid model connectors optional, credentials in local environment variables, and all external sending out of scope.

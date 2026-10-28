@@ -1,33 +1,100 @@
-# Ownership Code Pilot｜學生合作專案基地
+# Ownership Code Pilot｜開源 AI 實作計畫
 
-[English](README.md) · [任務認領](../../issues) · [任務清單](docs/TASKS.md) · [第一次參與](docs/GETTING_STARTED.md)
+**建立一套由人審閱、可追溯的 AI 流程，把真實客戶問題轉成有用的回應。**
 
-## 專案目標
+[English](README.md) · [題目說明](docs/CHALLENGE.md) · [適合第一次參與的任務](https://github.com/peculab/ownership-code-pilot/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) · [貢獻方式](CONTRIBUTING.md)
 
-從洗衣店社群的真實需求出發，驗證 AI 如何協助內容設計與信任建立。合作對象為 Pecu、學生與 Benjamin；需求、信任與 AI 改善效果都需要證據，不先當成已驗證結論。
+## 我們要回答的問題
 
-## 第一階段成果
+AI 能否協助人類團隊整理反覆出現的客戶痛點、依核准資料準備有用的回應，並判斷何時應交給真人接手——同時不冒充真人，也不發送未經核准的訊息？
 
-每人完成一項**可展示、可驗證的小任務**。可以是需求觀察、案例卡、內容企畫、AI 比較、可操作流程或試讀紀錄。認領時先確認一週內能完成的範圍與交付日期，每人同時先做一題。
+這個 Repository 開發可重複使用的流程、評量方法與參考實作。**Ownership Code 提供第一個企業情境，但不獨占此開源專案或貢獻者的成果。**其他社群與組織也可以使用自己的核准資料、帳號與模型供應商，改作自己的 use case。
 
-## 資料入口
+## 第一個公開 use case
 
-- [資源清單與取得狀態](docs/RESOURCES.md)：會議摘要、社團清單、Benjamin 素材。
-- [研究](research/)、[內容](content/)、[工程](src/)、[比較與測試](evaluation/)。
-- 目前素材與使用範圍尚待確認；此專案沒有自動匯入逐字稿、私人社團貼文或合作方原始檔。
+Ownership Code 服務的對象包括企業經營者、買方、營運者與投資人。現有關係建立流程需要有經驗的人研究問題、理解情境、提供有用資訊，再決定何時適合真人對談。
 
-## 認領方式
+第一期先測試更小的流程：
 
-到 [Issues](../../issues) 選題，留言「認領原因、預計做法、預計交付日期、需要協助」，經 Pecu／指定審閱者確認後設定 Assignee。一題先有一位主要負責人，協作者寫在 Issue。
+```text
+核准或合成的輸入
+        ↓
+辨識問題及有證據支持的痛點
+        ↓
+取得核准的參考資料
+        ↓
+產生附來源與不確定性的回應草稿
+        ↓
+人工審閱：核准、修改、拒絕或真人接手
+        ↓
+記錄回饋，進行評量
+```
 
-標示 `blocked` 的題目可先討論、認領，但不能跳過缺少的素材或存取許可。請記錄缺什麼、需要誰協助，再更新狀態。也可以用「學生自提題目」範本提出有依據的新任務。
+本專案不做私人社群爬取、冒充真人、心理操控或未經核准的自動訊息。詳見 [安全原則](docs/SAFETY.md)。
 
-## 交付方式
+## 我們要建立什麼
 
-研究文件也用 Pull Request。建立自己的分支，例如 `task-1-owner-research`，提交成果並在 PR 寫 `Closes #<任務編號>`。說明做了什麼、如何驗證與有哪些限制；經審閱修改及核准後合併。
+- 不綁定單一模型公司的通用流程。
+- 僅使用合成或經核准、去識別化案例的小型參考資料集。
+- 痛點分類與資料檢索 baseline。
+- 人工審閱與真人接手規則。
+- 評量相關性、來源支持、安全性與實用性的測試工具。
+- 放在 `examples/ownership-code/` 的 Ownership Code 公開案例。
 
-[協作規範](CONTRIBUTING.md) · [審閱標準](docs/REVIEW.md) · [看板流程](docs/PROJECT_BOARD.md) · [每週檢視](docs/WEEKLY_REVIEW.md)
+第一個里程碑是可審閱的原型，不是全自動 sales agent，也不承諾商業成果。
 
-敏感資料、密碼、API 金鑰、個資及未核准分享的素材不要放進 Repository。Private 不代表能任意轉貼社團內容，詳見 [資料使用原則](docs/DATA_HANDLING.md)。
+## 你可以怎麼參與
 
-此 Repository 設為 Private。邀請學生與 Benjamin 前，仍需確認各自的 GitHub 帳號，尚未自動邀請任何人。
+不需要一次完成整個系統。先選一項小成果：
+
+| 領域 | 可貢獻的成果 |
+| --- | --- |
+| 研究 | 將合成問題整理成清楚的痛點分類 |
+| 知識 | 把一份核准資料整理成可追溯的案例卡 |
+| UX | 設計核准、修改、拒絕與真人接手畫面 |
+| AI | 建立分類或檢索 baseline |
+| 評量 | 評分回應的實用性、來源、不確定性與安全性 |
+| 工程 | 串起輸入、檢索、草稿與審閱的最小流程 |
+| 文件 | 改善設定、範例、圖解與新人說明 |
+
+可從 [`good first issue`](https://github.com/peculab/ownership-code-pilot/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)、`help wanted` 及投入時間標籤開始。較大的工作請先留言說明做法。
+
+## 自備模型帳號與 Token 預算
+
+本專案採 **Bring Your Own Key（BYOK）**：
+
+- 不得提交 API key 或 access token。
+- 貢獻者可以選擇支援的模型供應商。
+- 每個部署者自行負擔模型、主機與第三方服務費用。
+- 測試優先使用小型 fixture，並盡量提供 mock 或不連網的路徑。
+- 供應商連接器放在系統邊界，核心資料格式維持可攜。
+
+## 公開與私密資料邊界
+
+可以放進此公開 Repository：程式、架構、prompt、schema、評量規則、合成案例，以及取得許可的去識別化範例。
+
+不得提交：
+
+- 客戶、潛在客戶或社群成員名單與聯絡資料。
+- 私人 Facebook 社團或受限社群內容。
+- 未核准公開的會議逐字稿與合作方文件。
+- 帳密、Token、私有 prompt 或帳號設定。
+- 未取得授權與同意、對真實對象發送的訊息。
+
+提交範例前請閱讀 [資料處理原則](docs/DATA_HANDLING.md)。
+
+## 參與、署名與後續機會
+
+貢獻會留在 Issues、commits 與 Pull Requests。經接受的貢獻者可在本人同意下列入 release notes 及公開 demo。
+
+參與不保證成果被採用，也不保證報酬、實習、聘僱、股權、成立公司或與 PecuLab／Ownership Code 建立商業關係。任何這類安排都必須另行簽訂書面協議。貢獻者只依 Repository 授權條款提供權利，並保留專案紀錄中的署名。
+
+## 專案狀態
+
+**探索／pre-alpha。** 題目已初步界定，正在建立公開 baseline、介面與成功標準。目前沒有核准的正式部署或自動對外聯繫。
+
+接著閱讀：[第一次參與](docs/GETTING_STARTED.md)、[系統架構](docs/ARCHITECTURE.md)、[評量方法](docs/EVALUATION.md)與[路線圖](docs/ROADMAP.md)。
+
+## 授權
+
+採用 [Apache License 2.0](LICENSE)。各組織名稱與商標仍屬各權利人所有，此授權不授予商標使用權。
