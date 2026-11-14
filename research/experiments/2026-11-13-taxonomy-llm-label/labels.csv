@@ -1,0 +1,13 @@
+scenario_id,perspective_labeler_1,perspective_llm,perspective_agree,label_labeler_1,label_llm,llm_confidence,llm_rationale,label_agree
+syn-001,owner,owner,1,exit-readiness,exit-readiness,high,"停在第7步；提到買家只是背景，沒指定具體面向。候選C（「買家需要哪些資訊」可能被讀成問紀錄），但題目沒問紀錄",1
+syn-002,owner,owner,1,owner-dependency,owner-dependency,high,"停在第7步；聚焦日常決策仰賴老闆，問該記錄什麼。無其他強候選",1
+syn-003,buyer,buyer,1,buyer-assessment,buyer-assessment,high,"停在第5步；第4步不符，因為只問一般融資前的提問，沒有持證專業的界線顧慮。候選F",1
+syn-004,owner,owner,1,transition-path,transition-path,medium,"停在第7步；列出漸進式交接和立即出售兩個選項。觀點不確定：題目用第三人稱「老闆要怎麼」，也可能是團隊或未指明",1
+syn-005,unspecified,unspecified,1,value-evidence,value-evidence,high,"停在第6步；問哪些紀錄能說明營收來源。候選B（提到依賴現任老闆），但第6步在前",1
+syn-006,owner,owner,1,exit-readiness,exit-readiness,high,"停在第7步；一般性地問該改善什麼，沒指定面向。候選H很弱，因為需求可以辨識",1
+syn-007,buyer,buyer,1,buyer-assessment,buyer-assessment,high,"停在第5步；買方在評估交易風險。無其他強候選",1
+syn-008,team,team,1,engagement-conduct,engagement-conduct,high,"停在第3步；問如何以尊重、不施壓的方式開啟對話。觀點是從語境推斷的團隊",1
+syn-009,unspecified,unspecified,1,professional-boundary,professional-boundary,high,"停在第4步；直接問哪些事需要持證專業人士。無其他候選",1
+syn-010,team,team,1,professional-boundary,professional-boundary,high,"停在第4步；問如何說明而不給個人化建議。候選E（融資內容），但界線顧慮優先",1
+syn-011,team,unspecified,0,unclear-need,unclear-need,medium,"停在第2步；題目描述的是缺少時程、目標和背景的請求。疑點：H 是指題目本身不清楚，還是指在問如何處理不清楚的請求？也可能是團隊觀點",1
+syn-012,team,team,1,workflow-governance,workflow-governance,high,"停在第1步；問何時退回或轉交 AI 草稿。無其他候選",1

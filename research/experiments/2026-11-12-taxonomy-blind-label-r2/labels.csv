@@ -1,0 +1,13 @@
+scenario_id,perspective_labeler_1,perspective_labeler_3,perspective_agree,label_labeler_1,label_labeler_3,labeler_3_confidence,labeler_3_rationale,label_agree
+syn-001,owner,buyer,0,exit-readiness,buyer-assessment,medium,,0
+syn-002,owner,owner,1,owner-dependency,transition-path,low,觀點,0
+syn-003,buyer,owner,0,buyer-assessment,unclear-need,medium,標籤,0
+syn-004,owner,owner,1,transition-path,exit-readiness,high,觀點,0
+syn-005,unspecified,buyer,0,value-evidence,value-evidence,medium,觀點,1
+syn-006,owner,owner,1,exit-readiness,professional-boundary,medium,觀點、團隊,0
+syn-007,buyer,unspecified,0,buyer-assessment,unclear-need,high,,0
+syn-008,team,team,1,engagement-conduct,exit-readiness,medium,,0
+syn-009,unspecified,team,0,professional-boundary,professional-boundary,high,,1
+syn-010,team,team,1,professional-boundary,value-evidence,low,標籤、A,0
+syn-011,team,unspecified,0,unclear-need,unclear-need,medium,,1
+syn-012,team,unspecified,0,workflow-governance,workflow-governance,high,,1

@@ -1,0 +1,13 @@
+scenario_id,labeler_1,labeler_2,labeler_2_confidence,labeler_2_rationale,agree
+syn-001,exit-readiness,buyer-assessment,high,,0
+syn-002,owner-dependency,transition-path,medium,,0
+syn-003,buyer-assessment,buyer-assessment,high,,1
+syn-004,transition-path,exit-readiness,high,,0
+syn-005,value-evidence,value-evidence,medium,,1
+syn-006,exit-readiness,buyer-assessment,medium,,0
+syn-007,buyer-assessment,buyer-assessment,medium,,1
+syn-008,engagement-conduct,engagement-conduct,high,,1
+syn-009,professional-boundary,professional-boundary,high,,1
+syn-010,professional-boundary,professional-boundary,medium,,1
+syn-011,unclear-need,unclear-need,high,,1
+syn-012,workflow-governance,workflow-governance,high,,1
